@@ -1,0 +1,237 @@
+# =============================================================================
+# HUGO CONFIGURATION FOR aiteachinglabs.COM
+# Data Engineering + AI Blog
+# =============================================================================
+
+baseURL = "https://aiteachinglabs.com/"
+languageCode = "en-us"
+title = "Teaching Labs"
+theme = "PaperMod"
+
+# Build settings
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+# Better URL handling
+canonifyURLs = true
+
+# Generate sitemap
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Minification
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+# Code highlighting
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = "dracula"
+    tabWidth = 4
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow HTML in markdown
+
+# RSS Feed
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Main menu
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "series"
+    name = "Series"
+    url = "/series/"
+    weight = 20
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archive"
+    url = "/archives/"
+    weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 60
+
+# =============================================================================
+# THEME PARAMETERS
+# =============================================================================
+[params]
+  env = "production"
+  title = "Teaching Labs"
+  description = "Deep dives into Data Engineering, AI Infrastructure, and Building Scalable Data Systems"
+  keywords = ["data engineering", "AI", "machine learning", "data pipelines", "MLOps", "data architecture", "python", "spark", "airflow", "dbt"]
+  author = "Your Name"  # UPDATE THIS
+  
+  # Images
+  images = ["/images/og-default.png"]
+  
+  # Date format
+  DateFormat = "January 2, 2006"
+  
+  # Default theme
+  defaultTheme = "auto"  # auto, light, dark
+  disableThemeToggle = false
+  
+  # Reading time & word count
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = true
+  ShowToc = true
+  TocOpen = false
+  
+  # Comments (use with Giscus, Utterances, or Disqus)
+  comments = true
+  
+  # RSS
+  ShowRssButtonInSectionTermList = true
+  
+  # Misc
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  hiddenSearchHidden = true
+  displayFullLangName = false
+  
+  # Home info mode - displays intro on homepage
+  [params.homeInfoParams]
+    Title = "Teaching Labs 🏗️"
+    Content = """
+Welcome! I write about **Data Engineering**, **AI/ML Infrastructure**, and building **scalable data systems**.
+
+Explore deep dives on pipelines, orchestration, modern data stack tools, and the intersection of data engineering with AI.
+"""
+
+  # Social icons in home info
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/YOUR_USERNAME"  # UPDATE THIS
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/YOUR_PROFILE"  # UPDATE THIS
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/YOUR_HANDLE"  # UPDATE THIS
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+  # Cover image defaults
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    linkFullImages = true
+    responsiveImages = true
+
+  # Edit post link (optional - links to GitHub)
+  [params.editPost]
+    URL = "https://github.com/YOUR_USERNAME/aiteachinglabs/tree/main/content"  # UPDATE THIS
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+  # Search (uses Fuse.js)
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+  # SEO - Schema.org structured data
+  [params.schema]
+    publisherType = "Person"  # or "Organization"
+    # logoUrl = "/images/logo.png"  # Uncomment if you have a logo
+    # sameAs = ["https://twitter.com/YOUR_HANDLE"]
+
+# =============================================================================
+# TAXONOMIES
+# =============================================================================
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+# =============================================================================
+# PRIVACY (GDPR COMPLIANT)
+# =============================================================================
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true  # We use privacy-friendly analytics instead
+  [privacy.instagram]
+    disable = true
+  [privacy.x]
+    enableDNT = true
+  [privacy.vimeo]
+    disable = false
+    enableDNT = true
+    simple = true
+  [privacy.youtube]
+    disable = false
+    privacyEnhanced = true
+
+# =============================================================================
+# SECURITY
+# =============================================================================
+[security]
+  [security.funcs]
+    getenv = ["^HUGO_"]
+
+# =============================================================================
+# RELATED CONTENT
+# =============================================================================
+[related]
+  includeNewer = true
+  threshold = 80
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "categories"
+    weight = 80
+  [[related.indices]]
+    name = "series"
+    weight = 90
+  [[related.indices]]
+    name = "date"
+    weight = 10
