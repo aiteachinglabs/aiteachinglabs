@@ -1,5 +1,3 @@
-```markdown
----
 title: "About"
 url: "/about/"
 summary: "About AI Teaching Labs"
@@ -28,4 +26,3 @@ I'm a Data Engineer passionate about building scalable data systems and explorin
 ---
 
 *This blog is built with Hugo and hosted on Cloudflare Pages.*
-```
