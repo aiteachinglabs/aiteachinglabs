@@ -130,7 +130,7 @@ canonifyURLs = true
   
   # Home info mode - displays intro on homepage
   [params.homeInfoParams]
-    Title = "AI Teaching Labs 🧠"
+    Title = "AI Teaching Labs"
     Content = """
 Welcome! I write about **Data Engineering**, **AI/ML Infrastructure**, and building **scalable data systems**.
 
