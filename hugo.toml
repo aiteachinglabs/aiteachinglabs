@@ -94,7 +94,7 @@ canonifyURLs = true
   title = "AI Teaching Labs"
   description = "Deep dives into Data Engineering, AI Infrastructure, and Building Scalable Data Systems"
   keywords = ["data engineering", "AI", "machine learning", "data pipelines", "MLOps", "data architecture", "python", "spark", "airflow", "dbt"]
-  author = "Your Name"  # UPDATE THIS
+  author = "Neo"  # UPDATE THIS
   
   # Images
   images = ["/images/og-default.png"]
@@ -160,10 +160,10 @@ Explore deep dives on pipelines, orchestration, modern data stack tools, and the
     responsiveImages = true
 
   # Edit post link (optional - links to GitHub)
-  [params.editPost]
-    URL = "https://github.com/aiteachinglabs/aiteachinglabs/tree/main/content"
-    Text = "Suggest Changes"
-    appendFilePath = true
+  #[params.editPost]
+  #  URL = "https://github.com/aiteachinglabs/aiteachinglabs/tree/main/content"
+  #  Text = "Suggest Changes"
+  #  appendFilePath = true
 
   # Search (uses Fuse.js)
   [params.fuseOpts]

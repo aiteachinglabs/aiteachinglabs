@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "Getting Started with Modern Data Engineering"
 date: 2024-01-15
@@ -8,7 +7,7 @@ tags: ["data-engineering", "beginners", "architecture"]
 categories: ["Fundamentals"]
 series: ["Data Engineering 101"]
 cover:
-    image: "images/posts/data-engineering-intro.png"
+    #image: "images/posts/data-engineering-intro.png"
     alt: "Data Engineering Introduction"
     caption: "Building the foundation for data-driven systems"
     relative: false
@@ -49,4 +48,3 @@ Testing my new Data Engineering Blog.
 ---
 
 *What aspects of data engineering would you like me to cover next? Drop a comment below!*
-```
