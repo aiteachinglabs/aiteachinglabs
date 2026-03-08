@@ -1,11 +1,11 @@
 # =============================================================================
-# HUGO CONFIGURATION FOR aiteachinglabs.COM
+# HUGO CONFIGURATION FOR AITEACHINGLABS.COM
 # Data Engineering + AI Blog
 # =============================================================================
 
 baseURL = "https://aiteachinglabs.com/"
 languageCode = "en-us"
-title = "Teaching Labs"
+title = "AI Teaching Labs"
 theme = "PaperMod"
 
 # Build settings
@@ -91,7 +91,7 @@ canonifyURLs = true
 # =============================================================================
 [params]
   env = "production"
-  title = "Teaching Labs"
+  title = "AI Teaching Labs"
   description = "Deep dives into Data Engineering, AI Infrastructure, and Building Scalable Data Systems"
   keywords = ["data engineering", "AI", "machine learning", "data pipelines", "MLOps", "data architecture", "python", "spark", "airflow", "dbt"]
   author = "Your Name"  # UPDATE THIS
@@ -130,7 +130,7 @@ canonifyURLs = true
   
   # Home info mode - displays intro on homepage
   [params.homeInfoParams]
-    Title = "Teaching Labs 🏗️"
+    Title = "AI Teaching Labs 🧠"
     Content = """
 Welcome! I write about **Data Engineering**, **AI/ML Infrastructure**, and building **scalable data systems**.
 
@@ -140,7 +140,7 @@ Explore deep dives on pipelines, orchestration, modern data stack tools, and the
   # Social icons in home info
   [[params.socialIcons]]
     name = "github"
-    url = "https://github.com/YOUR_USERNAME"  # UPDATE THIS
+    url = "https://github.com/aiteachinglabs"
   [[params.socialIcons]]
     name = "linkedin"
     url = "https://linkedin.com/in/YOUR_PROFILE"  # UPDATE THIS
@@ -161,7 +161,7 @@ Explore deep dives on pipelines, orchestration, modern data stack tools, and the
 
   # Edit post link (optional - links to GitHub)
   [params.editPost]
-    URL = "https://github.com/YOUR_USERNAME/aiteachinglabs/tree/main/content"  # UPDATE THIS
+    URL = "https://github.com/aiteachinglabs/aiteachinglabs/tree/main/content"
     Text = "Suggest Changes"
     appendFilePath = true
 
