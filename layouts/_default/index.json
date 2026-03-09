@@ -1,0 +1,14 @@
+{{- $.Scratch.Add "index" slice -}}
+{{- range .Site.RegularPages -}}
+    {{- if not .Params.searchHidden -}}
+        {{- $.Scratch.Add "index" (dict
+            "title" .Title
+            "permalink" .Permalink
+            "summary" .Summary
+            "content" (.Plain | htmlUnescape | truncate 500)
+            "date" (.Date.Format "2006-01-02")
+            "section" .Section
+        ) -}}
+    {{- end -}}
+{{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}
