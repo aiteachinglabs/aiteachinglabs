@@ -1,7 +1,7 @@
 ---
 title: "Why AI Needs Data Engineering More Than Most Teams Realize"
 date: 2025-03-09
-draft: true
+draft: false
 description: "Most AI projects fail not because of models, but because of data. Discover why data engineering is often the deciding factor behind successful AI systems and what separates teams that ship from those that stall."
 summary: "Most AI failures are data failures before they are model failures. The bottleneck isn't models or algorithms - it's data. Learn why data engineering is the most underinvested skill in AI teams."
 tags: ["data-engineering", "ai", "ml-systems", "architecture", "mlops"]
