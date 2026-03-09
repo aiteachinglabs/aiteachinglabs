@@ -1,6 +1,6 @@
 ---
 title: "Data Engineering for AI"
-description: "A comprehensive series exploring how data engineering powers modern AI systems — from pipelines and feature stores to RAG architectures and observability."
+description: "A comprehensive series exploring how data engineering powers modern AI systems - from pipelines and feature stores to RAG architectures and observability."
 summary: "Learn how to build robust data infrastructure for AI/ML systems. This series covers everything from foundational concepts to designing end-to-end AI data platforms."
 ---
 
@@ -19,17 +19,14 @@ Modern AI systems are only as good as the data infrastructure behind them. This 
 
 1. **Why AI Needs Data Engineering More Than Most Teams Realize**
 2. **Traditional Data Engineering vs AI Data Engineering**
-3. **The Modern AI Data Stack**
-4. **Designing Batch + Streaming Pipelines for AI Systems**
-5. **Lakehouse Architecture for AI Workloads**
+3. **Designing Batch + Streaming Pipelines for AI Systems**
+4. **Lakehouse Architecture for AI Workloads**
+5. **The Modern AI Data Stack**
 6. **Data Quality for AI**
-7. **Feature Stores Explained Simply**
-8. **Building Training Data Pipelines**
-9. **Embeddings Pipelines for Engineers**
-10. **Designing a RAG Data Pipeline**
-11. **Observability for AI Data Systems**
-12. **How I Would Design an End-to-End AI Data Platform Today**
-
----
-
-*New articles are published weekly. Subscribe to get notified!*
+7. **Data Versioning and Lineage for ML**
+8. **Feature Stores Explained Simply**
+9. **Building Training Data Pipelines**
+10. **Embeddings Pipelines for Engineers**
+11. **Designing a RAG Data Pipeline**
+12. **Observability for AI Data Systems**
+13. **How I Would Design an End-to-End AI Data Platform Today**

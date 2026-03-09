@@ -22,9 +22,5 @@ I'm a Data Engineer passionate about building scalable data systems and explorin
 #### Connect
 
 - GitHub: https://github.com/aiteachinglabs
-- LinkedIn: [your-linkedin]
+- LinkedIn: https://www.linkedin.com/in/aiteachinglabs/
 - Twitter/X: [your-handle]
-
----
-
-*This blog is built with Hugo and hosted on Cloudflare Pages.*
